@@ -34,17 +34,17 @@
         </div>
       </div>
 
-      <div id="buttons" class="row justify-content-center mt-4 py-4 shadow" v-if="isRunning">
-        <div class="col col-md-2 m-0">
+      <div id="buttons" class="row justify-content-center align-items-center mt-4 py-4 shadow" v-if="isRunning">
+        <div class="col col-md-2">
           <button class="btn btn-warning" @click="attack()">Attack</button>
         </div>
-        <div class="col col-md-2 m-0">
+        <div class="col col-md-2">
           <button class="btn btn-danger" @click="specialAttack">Special attack</button>
         </div>
-        <div class="col col-md-2 m-0">
+        <div class="col col-md-2">
           <button class="btn btn-success" @click="heal">Heal</button>
         </div>
-        <div class="col col-md-2 m-0">
+        <div class="col col-md-2">
           <button class="btn btn-primary" @click="giveUp">Give up</button>
         </div>
       </div>

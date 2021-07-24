@@ -12,7 +12,7 @@
     <div id="app" class="container mt-5">
 
       <div id="health" class="row py-4 justify-content-center shadow">
-        <div class="col col-4">
+        <div class="col col-md-4">
           <div>
             <h2 class="text-center">You</h2>
           </div>
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-4">
+        <div class="col col-md-4">
           <div>
             <h2 class="text-center">Monster</h2>
           </div>
@@ -35,17 +35,17 @@
       </div>
 
       <div id="buttons" class="row justify-content-center mt-4 py-4 shadow" v-if="isRunning">
-        <div class="col col-2">
-          <button class="btn btn-warning w-75" @click="attack()">Attack</button>
+        <div class="col col-md-2 m-0">
+          <button class="btn btn-warning" @click="attack()">Attack</button>
         </div>
-        <div class="col col-2">
-          <button class="btn btn-danger w-75" @click="specialAttack">Special attack</button>
+        <div class="col col-md-2 m-0">
+          <button class="btn btn-danger" @click="specialAttack">Special attack</button>
         </div>
-        <div class="col col-2">
-          <button class="btn btn-success w-75" @click="heal">Heal</button>
+        <div class="col col-md-2 m-0">
+          <button class="btn btn-success" @click="heal">Heal</button>
         </div>
-        <div class="col col-2">
-          <button class="btn btn-primary w-75" @click="giveUp">Give up</button>
+        <div class="col col-md-2 m-0">
+          <button class="btn btn-primary" @click="giveUp">Give up</button>
         </div>
       </div>
 
@@ -57,7 +57,7 @@
 
       <div id="logs" class="mt-4 py-4 shadow" v-if="logs.length">
         <div class="row justify-content-center">
-          <div class="col-6">
+          <div class="col-10 col-md-6">
             <div class="alert" :class="{'alert-success': log.isPlayer, 'alert-danger': !log.isPlayer}" role="alert" v-for="log in logs">
               {{ log.text }}
             </div>
